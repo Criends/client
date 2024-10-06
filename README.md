@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Criends-client
 
-## Getting Started
+썸네일 추가 예정
 
-First, run the development server:
+## Criends 배포 주소
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+배포주소
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 1. 아키텍처
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<details>
+<summary>프로덕션 환경에서의 아키텍처 보기</summary>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+추가예정
 
-## Learn More
+</details>
 
-To learn more about Next.js, take a look at the following resources:
+<details>
+<summary>개발 환경에서의 아키텍처 보기</summary>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+추가예정
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+</details>
 
-## Deploy on Vercel
+## 2. 서비스 소개
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Criends**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 3. 사용 기술 및 개발 환경
+
+
+
+## 4. 개발자
+
+| 프로필 | 깃허브                                      | 역할                                                                         |
+| --- | --- | --- |
+| 박상희 | [Sangddong](https://github.com/Sangddong)   | |
+| 이종환 |||
+
+## 5. 브랜치 전략
+
+### 브랜치 관리
+
+- main : 프로덕션 배포 브랜치
+- dev : 개발 환경용 브랜치
+- feat : 개별 기능 개발용 브랜치
+- hotfix : main 브랜치에서 발생한 버그를 수정하는 브랜치
+
+### 브랜치 작성 규칙
+
+- 브랜치 작성 규칙 : 태그/이슈번호\_변경사항-설명
+- 소문자로만 작성하며, 개조식 구문으로 작성
+- Ex) feat/11_implement-resume-logic
+
+### Commit Convention
+
+|   태그   |             설명              |
+| :------: | :---------------------------: |
+|   feat   |       새로운 기능 추가        |
+|   fix    |           버그 수정           |
+| refactor |         코드 리팩토링         |
+|   docs   |           문서 수정           |
+|  chore   |         기타 변경사항         |
+|   test   |          테스트 작성          |
+|    ci    | CI 구성 파일 및 스크립트 변경 |
+
+## 6. 주요 기능
+
+추가예정
+
+## 7. Sequence Diagram
+
+
+## 8. ERD
+
+![image](https://github.com/user-attachments/assets/cc848c71-2fce-4a79-84d9-e49d20fcdfac)
+
