@@ -8,6 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        pretendard: ["Pretendard", "sans-serif"],
+      },
+      fontWeight: {
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
