@@ -4,7 +4,7 @@ import { User } from "react-feather";
 
 export default function Header() {
   return (
-    <header className="fixed z-20 w-full backdrop-blur-sm drop-shadow-sm shadow-sm px-40 py-5">
+    <header className="h-20 w-full text-nowrap fixed z-20 backdrop-blur-sm drop-shadow-sm shadow-sm px-40 py-5">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-28">
           <Link
