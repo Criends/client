@@ -1,3 +1,9 @@
+import StartGuide from "@/components/StartGuide";
+
 export default function Home() {
-  return <div>Hello Criends!</div>;
+  return (
+    <div>
+      <StartGuide />
+    </div>
+  );
 }
