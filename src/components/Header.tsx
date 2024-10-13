@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center gap-28">
           <Link
             href="/"
-            className="p-1 rounded-md hover:backdrop-blur-sm hover:drop-shadow-sm text-2xl font-semibold tracking-tighter uppercase"
+            className="p-1 rounded-md hover:backdrop-blur-sm hover:drop-shadow-sm text-2xl font-semibold tracking-tighter uppercase text-brand"
           >
             Criends
           </Link>
