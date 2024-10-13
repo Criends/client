@@ -2,8 +2,8 @@ export default function StartGuide() {
   return (
     <div className="min-h-screen py-44 flex flex-col text-center bg-slate-300 relative">
       <div className="absolute inset-0 flex justify-center items-center">
-        {/* <div className="w-[1100px] h-[600px] bg-brand rounded-full opacity-50 blur-3xl"></div> */}
-        <div className="w-0 h-0 border-brand border-x-[550px] border-t-[600px] border-transparent border-t-brand opacity-50 blur-3xl"></div>
+        {/* <div className="w-[1100px] h-[600px] mb-52 bg-brand rounded-md opacity-50 blur-3xl"></div> */}
+        <div className="w-0 h-0 border-brand border-x-[600px] border-t-[600px] border-transparent border-t-brand opacity-50 blur-3xl"></div>
       </div>
       <div className="relative">
         <h1 className="text-5xl font-semibold">
