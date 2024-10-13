@@ -19,10 +19,13 @@ export default function Header() {
           </nav>
         </div>
 
-        <div className="px-4 py-2 bg-slate-200 rounded-full flex gap-1 items-center justify-center">
+        <Link
+          href="/login"
+          className="px-4 py-2 bg-slate-200 rounded-full flex gap-1 items-center justify-center hover:border hover:bg-brand hover:text-white transition-all"
+        >
           <User size={20} />
           <span>Login</span>
-        </div>
+        </Link>
       </div>
     </header>
   );

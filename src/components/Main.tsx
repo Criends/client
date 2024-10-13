@@ -9,7 +9,7 @@ export default function Main({
   heading,
 }: PropsWithChildren<MainProps>) {
   return (
-    <main className="min-h-screen px-40 pt-20 pb-32">
+    <main className="min-h-screen">
       <h1>{heading}</h1>
       {children}
     </main>
