@@ -4,7 +4,7 @@ import { User } from "react-feather";
 
 export default function Header() {
   return (
-    <header className="h-20 w-full text-nowrap fixed z-20 backdrop-blur-sm drop-shadow-sm shadow-sm px-10 py-5 md:px-20 lg:px-32 xl:px-40">
+    <header className="h-20 w-full text-nowrap fixed z-20 backdrop-blur-sm drop-shadow-sm shadow-sm px-10 py-5 md:px-20 lg:px-32 xl:px-40 ">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-20">
           <Link
@@ -21,7 +21,7 @@ export default function Header() {
 
         <Link
           href="/login"
-          className="px-4 py-2 bg-slate-200 rounded-full flex gap-1 items-center justify-center hover:border hover:bg-brand hover:text-white transition-all"
+          className="flex gap-2 px-4 py-2 bg-brand text-white hover:bg-slate-200 hover:text-brand rounded-full transition-all"
         >
           <User size={20} />
           <span>Login</span>
