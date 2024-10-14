@@ -1,8 +1,9 @@
 import Link from "next/link";
 
 const links = [
-  { name: "Resume", href: "/resumes", icon: null },
-  { name: "Portfolios", href: "/portfolios", icon: null },
+  { name: "내 프로필 관리하기", href: "/resumes", icon: null },
+  { name: "이력서/포트폴리오 구경하기", href: "/portfolios", icon: null },
+  { name: "이력서 보러가기", href: "/portfolios", icon: null },
 ];
 
 export default function NavLinks() {
