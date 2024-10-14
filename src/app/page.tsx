@@ -24,6 +24,7 @@ export default function Home() {
         만들고 관리해보세요"
         link1={{ href: "#", label: "포트폴리오 생성하기" }}
         link2={{ href: "#", label: "템플릿 구경하기" }}
+        reverse
       />
 
       {/* 게시판 안내 섹션 */}

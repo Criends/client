@@ -22,7 +22,6 @@ export default function Section({
         <div
           className={clsx("flex flex-col md:flex-row gap-10 my-auto", {
             "md:flex-row-reverse": reverse,
-            "md:flex-row": !reverse,
           })}
         >
           <div className="w-full md:w-1/2 bg-slate-200">
@@ -35,16 +34,23 @@ export default function Section({
                 <p className="text-base">{description}</p>
               </div>
             </div>
-            <div className="mt-5 flex gap-5 justify-center md:justify-start text-sm">
+            <div
+              className={clsx(
+                `mt-5 flex gap-5 justify-center md:justify-start text-sm`,
+                {
+                  "md:justify-end": reverse,
+                }
+              )}
+            >
               <Link
                 href={link1.href}
-                className="px-4 py-2 bg-slate-200 rounded-full hover:bg-slate-300 transition-colors"
+                className="px-4 py-2 bg-brand text-white hover:bg-slate-200 hover:text-brand rounded-full transition-all"
               >
                 {link1.label}
               </Link>
               <Link
                 href={link2.href}
-                className="px-4 py-2 bg-slate-200 rounded-full hover:bg-slate-300 transition-colors"
+                className="px-4 py-2 bg-brand text-white hover:bg-slate-200 hover:text-brand rounded-full transition-all"
               >
                 {link2.label}
               </Link>
