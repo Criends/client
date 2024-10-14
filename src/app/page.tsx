@@ -8,9 +8,9 @@ export default function Home() {
       <StartGuide />
 
       <Section>
-        <div className="flex gap-10 my-auto">
-          <div className="w-80 h-96 bg-slate-200"></div>
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-col md:flex-row gap-10 my-auto">
+          <div className="w-72 mx-auto h-96 bg-slate-200"></div>
+          <div className="flex-1 flex flex-col justify-between">
             <div className="flex flex-col gap-5">
               <h2 className="text-2xl">눈에 띄는 이력서를 준비해보세요.</h2>
               <p>
@@ -19,7 +19,7 @@ export default function Home() {
                 관리해보세요.
               </p>
             </div>
-            <div className="flex gap-5 justify-end">
+            <div className="mt-5 flex gap-5 justify-center md:justify-end">
               <Link
                 href="#"
                 className="px-4 py-2 bg-slate-200 rounded-full text-sm"
@@ -38,9 +38,9 @@ export default function Home() {
       </Section>
 
       <Section>
-        <div className="flex flex-row-reverse gap-10 my-auto">
-          <div className="w-80 h-96 bg-slate-200"></div>
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-col md:flex-row-reverse gap-10 my-auto">
+          <div className="w-72 mx-auto h-96 bg-slate-200"></div>
+          <div className="flex-1 flex-col justify-between">
             <div className="flex flex-col gap-5">
               <h2 className="text-2xl">
                 경쟁력 있는 포트폴리오를 준비해보세요.
@@ -51,7 +51,7 @@ export default function Home() {
                 만들고 관리해보세요.
               </p>
             </div>
-            <div className="flex gap-5 justify-start">
+            <div className="mt-5 flex gap-5 justify-center md:justify-start">
               <Link
                 href="#"
                 className="px-4 py-2 bg-slate-200 rounded-full text-sm"
@@ -70,9 +70,9 @@ export default function Home() {
       </Section>
 
       <Section>
-        <div className="flex gap-10 my-auto">
-          <div className="w-80 h-96 bg-slate-200"></div>
-          <div className="flex flex-col justify-between">
+        <div className="flex flex-col  md:flex-row gap-10 my-auto">
+          <div className="w-72 mx-auto h-96 bg-slate-200"></div>
+          <div className="flex-1 flex-col justify-between">
             <div className="flex flex-col gap-5">
               <h2 className="text-2xl">
                 다른 이력서와 포트폴리오를 참고해보세요.
@@ -83,7 +83,7 @@ export default function Home() {
                 만든 이력서와 포트폴리오를 공유할 수 있습니다.
               </p>
             </div>
-            <div className="flex gap-5 justify-end">
+            <div className="mt-5 flex gap-5 justify-center md:justify-end">
               <Link
                 href="#"
                 className="px-4 py-2 bg-slate-200 rounded-full text-sm"
