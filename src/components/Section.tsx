@@ -17,15 +17,15 @@ export default function Section({
   link2,
 }: SectionProps) {
   return (
-    <section className="w-full py-10 flex justify-center">
-      <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8">
+    <section className="w-full py-14 my-14 flex justify-center">
+      <div className="w-full">
         <div
           className={clsx("flex flex-col md:flex-row gap-10 my-auto", {
             "md:flex-row-reverse": reverse,
           })}
         >
           <div className="w-full md:w-1/2 bg-slate-200">
-            <div className="aspect-w-16 aspect-h-9 bg-slate-200 rounded-lg h-[400px]"></div>
+            <div className="aspect-w-16 aspect-h-9 bg-slate-400 rounded-lg h-[400px]"></div>
           </div>
           <div className="w-full h-full md:w-1/2 flex flex-col justify-between md:h-[400px]">
             <div className="flex flex-col gap-5 h-full">
@@ -36,7 +36,7 @@ export default function Section({
             </div>
             <div
               className={clsx(
-                `mt-5 flex gap-5 justify-center md:justify-start text-sm`,
+                `mt-5 flex gap-5 justify-center md:justify-end text-sm`,
                 {
                   "md:justify-end": reverse,
                 }
