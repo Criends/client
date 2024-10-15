@@ -10,7 +10,7 @@ export default function NavLinks() {
   return (
     <>
       {links.map((link) => (
-        <Link href={link.href} key={link.name}>
+        <Link href={link.href} key={link.name} className="text-sm">
           {link.name}
         </Link>
       ))}
