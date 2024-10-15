@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function StartGuide() {
   return (
-    <div className="px-10 md:px-0 py-44 flex flex-col text-center bg-slate-300 relative">
+    <div className="mt-[5rem] px-10 md:px-0 py-44 flex flex-col text-center bg-slate-300 relative">
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="w-[450px] h-[450px] bg-brand rounded-full opacity-50 blur-3xl"></div>
         {/* <div className="w-0 h-0 border-brand border-x-[600px] border-t-[600px] border-transparent border-t-brand opacity-50 blur-3xl"></div> */}
