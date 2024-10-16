@@ -1,11 +1,8 @@
 import Section from "@/components/Section";
-import StartGuide from "@/components/StartGuide";
 
 export default function Home() {
   return (
     <div>
-      <StartGuide />
-
       {/* 이력서 안내 섹션 */}
       <Section
         title="눈에 띄는 이력서를 준비해보세요."
