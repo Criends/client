@@ -9,7 +9,7 @@ interface SectionProps {
   link2: { href: string; label: string };
 }
 
-export default function Section({
+export default function StartSection({
   reverse,
   title,
   description,
@@ -34,12 +34,9 @@ export default function Section({
             </div>
           </div>
           <div
-            className={clsx(
-              `mt-5 flex gap-5 justify-center md:justify-end text-sm`,
-              {
-                "md:justify-end": reverse,
-              }
-            )}
+            className={clsx(`mt-5 flex gap-5 justify-end text-sm`, {
+              "md:justify-start": reverse,
+            })}
           >
             <Link
               href={link1.href}

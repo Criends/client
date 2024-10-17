@@ -1,5 +1,5 @@
 import Main from "@/components/Main";
-import Section from "@/components/Section";
+import StartSection from "@/components/StartSection";
 import StartGuide from "@/components/StartGuide";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
       <Main>
         <div>
           {/* 이력서 안내 섹션 */}
-          <Section
+          <StartSection
             title="눈에 띄는 이력서를 준비해보세요."
             description="Criends에는 종환이가 앞으로 만들어줄 100만개의 이력서 템플릿이
           준비되어 있습니다. 템플릿을 활용하여 눈에 띄는 이력서를 만들고
@@ -19,7 +19,7 @@ export default function Home() {
           />
 
           {/* 포트폴리오 안내 섹션 */}
-          <Section
+          <StartSection
             title="눈에 띄는 포트폴리오를 준비해보세요."
             description="Criends에는 종환이가 앞으로 만들어줄 100만개의 포트폴리오
           템플릿이 준비되어 있습니다. 템플릿을 활용하여 눈에 띄는 이력서를
@@ -30,7 +30,7 @@ export default function Home() {
           />
 
           {/* 게시판 안내 섹션 */}
-          <Section
+          <StartSection
             title="다른 이력서와 포트폴리오를 참고해보세요."
             description="Criends에서 작성된 다양한 이력서와 포트폴리오를 구경할 수
           있습니다. 같은 업계의 이력서와 포트폴리오를 구경해보세요. 내가
