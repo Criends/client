@@ -9,7 +9,7 @@ export default function Main({
   heading,
 }: PropsWithChildren<MainProps>) {
   return (
-    <main className="min-h-screen py-5 mx-4 md:mx-40">
+    <main className="min-h-screen">
       <h1>{heading}</h1>
       {children}
     </main>
