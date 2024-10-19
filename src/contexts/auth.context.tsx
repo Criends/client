@@ -11,12 +11,14 @@ export type LoginData = {
 
 interface AuthContextType {
   isAuthenticated: boolean;
+  errorMessage: string | null;
   login: (data: LoginData) => Promise<boolean>;
   logout: () => void;
 }
 
 const initialAuthContext: AuthContextType = {
   isAuthenticated: false,
+  errorMessage: null,
   login: async () => false,
   logout: () => {},
 };
@@ -28,6 +30,7 @@ export default function AuthContextProvider({
 }: {
   children: React.ReactNode;
 }) {
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
     if (typeof window !== "undefined") {
       return !!sessionStorage.getItem("accessToken");
@@ -43,7 +46,7 @@ export default function AuthContextProvider({
 
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!emailRegex.test(email)) {
-        console.error("유효하지 않은 이메일 형식입니다.");
+        setErrorMessage("유효하지 않은 이메일 형식입니다.");
         return false;
       }
 
@@ -64,10 +67,12 @@ export default function AuthContextProvider({
         return true;
       } else {
         console.error("로그인 응답에 accessToken이 없습니다.");
+        setErrorMessage("이메일 또는 비밀번호를 확인해주세요.");
         return false;
       }
     } catch (error) {
       console.error("로그인 중 오류 발생:", error);
+      setErrorMessage("이메일 또는 비밀번호를 확인해주세요.");
       logout();
       return false;
     }
@@ -96,6 +101,7 @@ export default function AuthContextProvider({
 
   const value: AuthContextType = {
     isAuthenticated,
+    errorMessage,
     login,
     logout,
   };
