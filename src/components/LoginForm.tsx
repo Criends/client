@@ -24,11 +24,15 @@ export default function LoginForm() {
           type="email"
           className="bg-[#eeeeee] px-4 py-2 rounded-full outline-none"
           name="email"
+          placeholder="아이디를 입력하세요."
+          required
         />
         <input
           type="password"
           className="bg-[#eeeeee] px-4 py-2 rounded-full outline-none"
           name="password"
+          placeholder="비밀번호를 입력하세요."
+          required
         />
       </fieldset>
       <button className="bg-brand w-full px-2 py-2 rounded-full text-white">

@@ -4,7 +4,7 @@ import AuthButtons from "./AuthButtons";
 
 export default function Header() {
   return (
-    <header className="h-20 w-full text-nowrap fixed z-20 backdrop-blur-sm drop-shadow-sm shadow-sm px-10 py-5 md:px-20 lg:px-32 xl:px-40 ">
+    <header className="h-20 w-full text-nowrap fixed z-20 backdrop-blur-sm drop-shadow-sm shadow-sm px-10 py-5 md:px-20 lg:px-32 xl:px-40">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-20">
           <Link
