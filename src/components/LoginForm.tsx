@@ -1,26 +1,24 @@
 "use client";
 
-import { loginApi } from "@/api/auth.api";
+import { useAuth } from "@/contexts/auth.context";
+import { redirect } from "next/navigation";
 
 export default function LoginForm() {
-  async function login(formData: FormData) {
-    const email = String(formData.get("email"));
-    const password = String(formData.get("password"));
+  const { login } = useAuth();
 
-    // 이메일 형식 검증
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      console.error("유효하지 않은 이메일 형식입니다.");
-      return;
+  async function handleSubmit(formData: FormData) {
+    const data = {
+      email: formData.get("email") as string,
+      password: formData.get("password") as string,
+    };
+
+    if (await login(data)) {
+      redirect("/");
     }
-
-    await loginApi(email, password)
-      .then((response) => console.log(response.data))
-      .catch((error) => console.log(error));
   }
 
   return (
-    <form className="flex flex-col gap-2" action={login}>
+    <form className="flex flex-col gap-2" action={handleSubmit}>
       <fieldset className="flex flex-col gap-2">
         <input
           type="email"
