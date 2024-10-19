@@ -10,14 +10,12 @@ export type LoginData = {
 };
 
 interface AuthContextType {
-  username: string | null;
   isAuthenticated: boolean;
   login: (data: LoginData) => Promise<boolean>;
   logout: () => void;
 }
 
 const initialAuthContext: AuthContextType = {
-  username: null,
   isAuthenticated: false,
   login: async () => false,
   logout: () => {},
@@ -30,8 +28,12 @@ export default function AuthContextProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const [username, setUsername] = useState<string | null>(null);
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(() => {
+    if (typeof window !== "undefined") {
+      return !!sessionStorage.getItem("accessToken");
+    }
+    return false;
+  });
 
   async function login(data: LoginData): Promise<boolean> {
     try {
@@ -49,7 +51,6 @@ export default function AuthContextProvider({
 
       if (response.data && response.data.accessToken) {
         setIsAuthenticated(true);
-        setUsername(email.split("@")[0]);
 
         sessionStorage.setItem("accessToken", response.data.accessToken);
 
@@ -90,12 +91,10 @@ export default function AuthContextProvider({
 
   function logout() {
     setIsAuthenticated(false);
-    setUsername(null);
     sessionStorage.removeItem("accessToken");
   }
 
   const value: AuthContextType = {
-    username,
     isAuthenticated,
     login,
     logout,
