@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="ko" className="font-pretendard antialiased">
       <body className="flex flex-col min-h-screen">
-        <Header />
-        <StartGuide />
         <AuthContextProvider>
+          <Header />
+          <StartGuide />
           <Main>{children}</Main>
+          <Footer />
         </AuthContextProvider>
-        <Footer />
       </body>
     </html>
   );
