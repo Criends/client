@@ -5,7 +5,7 @@ import SocialLoginContainer from "@/components/SocialLoginContainer";
 export default function page() {
   return (
     <Main>
-      <section className="w-80 mx-auto mt-52">
+      <section className="w-80 mx-auto mt-40">
         <LoginForm />
 
         <div className="flex justify-center items-center my-5">
